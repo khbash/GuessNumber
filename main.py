@@ -20,3 +20,12 @@ while True:
                 break
         else:
             print("Помилка! тільки цифри")
+
+    print("Чи хочете ви зіграти ще раз?")
+    answer = input("Y/N: ").lower()
+    if answer != "y":
+        print("=" * 50)
+        print("Дякую за гру! Повертайся ще")
+        break
+
+
