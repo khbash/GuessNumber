@@ -1,8 +1,11 @@
 import random
 
+secret = []
+
 nickname = input("Nickname: ")
 while True:
     secret_num = random.randint(1,50)
+    secret.append(secret_num)
     attempts = 0
 
     while True:
@@ -18,10 +21,12 @@ while True:
                 print("Моє число меньше")
             else:
                 print(f"Вітаю! Ти вгадав число за {attempts} спроб!")
+
                 break
         else:
             print("Помилка! тільки цифри")
 
+    print("Усі загадувані числа:", secret)
     print("Чи хочете ви зіграти ще раз?")
     answer = input("Y/N: ").lower()
     if answer != "y":
