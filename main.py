@@ -17,7 +17,7 @@ while True:
             elif guess > secret_num:
                 print("Моє число меньше")
             else:
-                print("Вітаю! Ти вгадав число за {attempts} спроб!")
+                print(f"Вітаю! Ти вгадав число за {attempts} спроб!")
                 break
         else:
             print("Помилка! тільки цифри")
