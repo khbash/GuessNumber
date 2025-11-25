@@ -1,5 +1,6 @@
 import random
 
+nickname = input("Nickname: ")
 while True:
     secret_num = random.randint(1,50)
     attempts = 0
@@ -25,8 +26,8 @@ while True:
     answer = input("Y/N: ").lower()
     if answer != "y":
         print("=" * 50)
-        print("Дякую за гру! Повертайся ще")
+        print(f"{nickname}, Дякую за гру! Повертайся ще")
         break
 
     print("=" * 50)
-    print("Привіт знову!")
+    print(f"{nickname}, Привіт знову!")
